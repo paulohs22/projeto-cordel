@@ -1,75 +1,68 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
-
-
-
-
-h1{
-   
-    position: absolute;
-    color: white;
+  :root{
+    ---fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    ---fonte2: 'passion one', cursive;
+    ---fonte3: 'sriracha', cursive;
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+  html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(---fonte1);
+    
+  }
+  
+header{
+    
     text-align: center;
-    font-family: 'Passion One';
-    font-size: 3em;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    
-}
-h4{
-    position: absolute;
     color: white;
-    text-align: center;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    
-}
-
-div a:hover{
-    text-decoration: none;
-    background-color: aliceblue;
-    
-}
-
-div{
-    position: relative;
     background-color: black;
-    
-    height: 200px;    
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(---fonte2);
+    font-size: 10vw;
+
 }
 p{
-    font-family: 'Sriracha', cursive;;
-    margin: -1px;
-    padding-left: 15px;
-   
+    padding-bottom: 50px;
+    font-family: var(---fonte3);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+header a:hover, footer a:hover{
     
-    
+    text-decoration: underline;
     
 }
-.m1{
+
+
+section{
+    padding-left: 25px;
     padding-top: 10%;
     padding-bottom: 10%;
     background-color: white;
-    
+    line-height: 2em;
+    font-size: 4vw;
 
 }
-p > main{
-    padding-top: 50px;
+section.imagem{
+    background-position: center center;
 }
-.m2{
-    padding: 70px;
-    background-color: transparent;
-    
-   
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 400px;
+    color: aliceblue;
 }
-main.m2 >p{
-    
-    background-color: rgba(0, 0, 0, 0);
-    width: 200px;
-}
-body> main.m2 {
-    background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;
-    background-position: center ;
-}
+
+
+
